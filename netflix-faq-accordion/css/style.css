@@ -1,0 +1,55 @@
+.qna {
+    max-width: 500px;
+    margin: 0 auto;
+}
+/* removing default styles on the button */
+button {
+    border: none;
+    outline: none;
+    cursor: pointer;
+}
+
+/* styling the accordion buttons */
+.accordion {
+    width: 100%;
+    background-color: #303030;
+    color: white;
+    font-size: 20px;
+    padding: 18px 20px;
+    margin-bottom: 1px;
+    text-align: left;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.panel{
+    background-color: #303030;
+    color: #fff;
+    margin-bottom: 4px;
+    overflow: hidden;
+    transition: max-height 0.33s cubic-bezier(.5,0,.1,1);
+  }
+
+.panel p {
+    padding: 10px 20px;
+}
+
+.panel-closed{
+    max-height: 0;
+    overflow: hidden;
+  }
+
+.panel-open{
+max-height: 700px;
+} 
+
+ion-icon {
+    font-size: 30px;
+    transition: all 0.15s ease-in;
+}
+
+.active{
+    transform: rotate(45deg);
+}
+
